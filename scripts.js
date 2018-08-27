@@ -33,49 +33,21 @@
 //     document.write("Trafiłes, liczba prób wyniosła " + numberTries);
 // }
 
-
-
-
-
-
-
-
-// var secretNumber = 23;
-// var numberMany = 0;
-//
-// while(pickNumber != secretNumber) {
-//
-//     var pickNumber = prompt("Zgadnij liczbę z przedziału 1-100","");
-//
-//     if (pickNumber < secretNumber) {
-//         alert("Liczba zbyt mała, spróbuj ponownie!")
-//     } else if (pickNumber > secretNumber) {
-//         alert("Liczba zbyt duża, spróbuj ponownie!")
-//     } else {
-//         alert("TRAFIONE BRAWO!")
-//     }
-//     numberMany++;
-// }
-//
-// document.write("Ilość prób wynosi " + numberMany);
-
-
-
-
-
 var secretNumber = 23;
-var selectNumber;
+var numberMany = 0;
 
-for (var i = 0; i<10; i++) {
-    var pickNumber = prompt("Podaj liczbę z przedziału od 1-100","");
+while(pickNumber != secretNumber) {
+
+    var pickNumber = prompt("Zgadnij liczbę z przedziału 1-100","");
 
     if (pickNumber < secretNumber) {
-        alert("Liczba zbyt mała, spróbuj ponownie");
+        alert("Liczba zbyt mała, spróbuj ponownie!")
     } else if (pickNumber > secretNumber) {
-        alert("Liczba zbyt duża, spróbuj ponownie");
+        alert("Liczba zbyt duża, spróbuj ponownie!")
     } else {
-        alert("TRAFIONE, BRAWO !!!");
+        alert("TRAFIONE BRAWO!")
     }
+    numberMany++;
 }
 
-document.write("Ilość prób wyniosła " + i);
+document.write("Ilość prób wynosi " + numberMany);
