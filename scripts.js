@@ -33,7 +33,7 @@
 //     document.write("Trafiłes, liczba prób wyniosła " + numberTries);
 // }
 
-var secretNumber = 23;
+var secretNumber = Math.floor(Math.random()*100) + 1;
 var numberMany = 0;
 
 while(pickNumber != secretNumber) {
